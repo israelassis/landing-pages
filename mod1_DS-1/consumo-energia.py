@@ -7,7 +7,7 @@ print("\n-- Calculadora de Consumo Energético --")
 #entrada de dados
 nome_aparelho = input("Nome do aparelho (ex: Geladeira): ")
 potencia = float(input(f"Potência de {nome_aparelho} em Watts (W): "))
-horas_dia = float(input(f"Horas de uso por dia de {nome_aparelho} (ex: 2 horas e meia = 2.5 ou 2 horas = 2) "))
+horas_dia = float(input(f"Horas de uso por dia de {nome_aparelho} \n(ex: 2 horas e meia = 2.5 ou 2 horas = 2) "))
 
 
 #processamento

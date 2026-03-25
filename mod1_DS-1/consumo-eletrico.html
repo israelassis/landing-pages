@@ -1,0 +1,107 @@
+<!-- 
+ 1- Criar uma calculadora de consumo elétrico inteligente
+ 2- O objetivo é ajudar usuários a estimar quanto um aparelho gasta de energia elétrica por mês, com base em dados simples de uso. -->
+ 
+<!--
+Criar o projeto localmente
+Crie uma pasta chamada projetos, e dentro dela uma subpasta chamada consumo-energia.
+No arquivo app.py, desenvolva um programa em Python que:
+Peça o nome do aparelho (ex.: “Geladeira”).
+Peça a potência do aparelho em watts (W).
+Peça o tempo médio de uso diário em horas.
+Calcule o consumo mensal em kWh, usando a fórmula:
+consumoMensal = (potencia * horasDia * 30) / 1000
+4. Mostre na tela o resultado formatado, por exemplo: 
+
+Aparelho: Geladeira
+Consumo estimado: 45 kWh/mês
+Dica: se quiser deixar mais interessante, adicione um cálculo de custo estimado, multiplicando o consumo por um valor fixo (ex.: R$ 0,75 por kWh). 
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Monozukuri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #2c3e50; /* A cor da disciplina */
+    width: 300px;
+}
+
+h2 { text-align: center; color: #2c3e50; }
+
+.input-group { margin-bottom: 1rem; }
+
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background-color: #219150; }
+
+.hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>⚡ Consumo Energético</h2>
+        <form id="calcForm">
+            <div class="input-group">
+                <label>Aparelho:</label>
+                <input type="text" required placeholder="Ex: Geladeira">
+            </div>
+            <div class="input-group">
+                <label>Potência (W):</label>
+                <input type="number" id="potencia">
+            </div>
+            <div class="input-group">
+                <label>Horas/Dia:</label>
+                <input type="number" id="horas">
+            </div>
+            
+            <button type="button" onclick="calcular()">Calcular</button>
+        
+        </form>
+
+        <div id="resultado">
+            <hr>
+            <p id="res-texto"></p>
+        </div>
+    </div>
+  
+</body>
+</html>
