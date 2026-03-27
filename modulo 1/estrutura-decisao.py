@@ -1,7 +1,7 @@
 """
-Todos os dias, somos confrontados com escolhas que parecem simples, mas
-carregam consigo consequências importantes na nossa rotina e no modo como
-encaramos o mundo!
+    Todos os dias, somos confrontados com escolhas que parecem simples, mas
+    carregam consigo consequências importantes na nossa rotina e no modo como
+    encaramos o mundo!
 """
 
 # estrutura condicional simples
@@ -13,10 +13,12 @@ if idade >= 18:
 
 
 temperatura = float(input("Digite a temperatura: "))
-"""O programa verifica a condição (temperatura > 30). 
+"""
+    O programa verifica a condição (temperatura > 30). 
     Se essa condição for verdadeira (True), ele executa o comando que está dentro do if. 
     Caso seja falsa (False), o programa simplesmente continua sua execução normalmente, 
-    sem executar nenhuma ação adicional."""
+    sem executar nenhuma ação adicional
+"""
 
 if temperatura > 30:
  print("Está muito quente hoje!")
@@ -26,9 +28,11 @@ if temperatura > 30:
 # “Se isso acontecer, faça isso.
 # Senão, se for aquilo acontecer, faça aquilo”
 valor_compra = float(input("Digite o valor da compra: R$ "))
-"""A condição (valor_compra >= 100) é avaliada pelo programa. 
+"""
+    A condição (valor_compra >= 100) é avaliada pelo programa. 
     Se for verdadeira, ele exibe a mensagem informando que o cliente tem direito ao desconto. 
-    Caso seja falsa, o bloco do else é executado, informando que não há desconto disponível"""
+    Caso seja falsa, o bloco do else é executado, informando que não há desconto disponível
+"""
 
 if valor_compra >= 100:
  print("Você ganhou um desconto de 10%!")
@@ -49,3 +53,4 @@ elif nota >= 5:
     print("Recuperação.")
 else:
     print("Reprovado.")
+
