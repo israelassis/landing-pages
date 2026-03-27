@@ -54,3 +54,22 @@ elif nota >= 5:
 else:
     print("Reprovado.")
 
+
+# Parcelamento de acordo com o valor da Compra
+#entrada de dados
+valor = float(input("Digite o valor da Compra: "))
+
+# condições
+if valor <= 100:
+    print("Pagamento à Vista")
+    p = valor
+else:
+    if valor <= 200:
+        print("Pagamento em 2x")
+        p = valor / 2
+    else:
+        print("Pamento em 3x")
+        p = valor / 3
+
+# saida / exibição
+print("O valor da cada parcela é: R$ ", p)
